@@ -1,0 +1,463 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: keifont;
+    src: url(font/keifont.ttf);
+}
+
+div {
+    padding-top: 60px;
+}
+
+h1 {
+    text-align:  center;
+    margin-left: 200px;
+    font-size: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+input {
+    display: none;
+}
+
+.smart {
+    display: none;
+}
+
+/* フェードアニメーション */
+.feed {
+    animation: downIn 1s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+}
+
+@keyframes downIn {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* メインの四角形の作成 */
+.sqr {
+    margin: 10px auto;
+    width: 910px;
+    height: 530px;
+    border: solid 9px rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* 表側の表示 */
+.img {
+    position: relative;
+    top: -40px;
+    left: -5px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.name {
+    margin-left: -100px;
+    margin-top: -290px;
+    font-size: 90px;
+    padding: 0;
+}
+
+.id {
+    margin-left: 80px;
+    margin-top: -80px;
+    padding: 0;
+    color: #8bdaff;
+}
+
+.foo2 {
+    position: relative;
+}
+
+.worker {
+    position: absolute;
+    top: -100px;
+    margin-left: 10px;
+    font-size: 50px;
+}
+
+.copy {
+    margin-left: 20px;
+}
+
+.link-1 {
+    margin-left: 10px;
+    font-size: 50px;
+    position: relative;
+    color: #000000;
+}
+
+.icon {
+    margin-left: 250px;
+}
+.icon:hover::after {
+    opacity: 0.8;
+    content: 'Shicoku_';
+    animation: hover 1s cubic-bezier(0.1, 1, 0.1, 1) 1 forwards;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    /*線の形状*/
+    width: 80%;
+    height: 2px;
+    background:#23e5ec;
+    transition: all .1s;
+    transform: scale(0, 1);
+    transform-origin: left top;
+}
+.icon2:hover::after {
+    opacity: 0.8;
+    content: 'H2DH8K';
+    animation: hover 1s cubic-bezier(0.1, 1, 0.1, 1) 1 forwards;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background:#23e5ec;
+    transition: all .1s;
+    transform: scale(0, 1);
+    transform-origin: left top;
+}
+.icon3:hover::after {
+    opacity: 0.8;
+    content: 'Shicoku';
+    animation: hover 1s cubic-bezier(0.1, 1, 0.1, 1) 1 forwards;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background:#2f006d;
+    transition: all .1s;
+    transform: scale(0, 1);
+    transform-origin: left top;
+}
+.icon4:hover::after {
+    opacity: 0.8;
+    content: 'texture08';
+    font-size: 80%;
+    animation: hover 1s cubic-bezier(0.1, 1, 0.1, 1) 1 forwards;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background:#000000;
+    transition: all .1s;
+    transform: scale(0, 1);
+    transform-origin: left top;
+}
+
+@keyframes hover {
+    0% {
+        transform: translateX(10000px);
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.front {
+    display: block;
+    animation: downIn 1s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+}
+#back {
+    display: none;
+    position: relative;
+    animation: downIn 1s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+}
+
+#chk {
+    display: none;
+}
+#chk:checked ~ #back {
+    display: block;
+}
+#chk:checked ~ .front {
+    display: none;
+}
+
+
+.back_btn {
+    margin-left: 600px;
+
+}
+.button{
+    border: 2px solid #000000;
+    border-radius: 50px;
+    font-size: 30px;
+    display: inline-block;
+    padding: 20px 50px;
+    margin: 20px 0;
+    position: relative;
+}
+.button2{
+    border: 2px solid #000000;
+    border-radius: 100px;
+    font-size: 20px;
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 20px 0;
+    position: relative;
+}
+.btn{
+    color: #000000;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.btn:before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background-color: #000000;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover{
+    color: #ecf0f1;
+}
+.btn:hover:before{
+    left: 0;
+}
+
+.foo{
+    position: absolute;
+    top: 350px;
+    left: 50px;
+}
+
+.btn3 {
+    font-family: none;
+    font-size: 60px;
+    margin-left: 10px;
+    border: 5px solid #00000000;
+    border-radius: 20px;
+    padding: 10px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.btn3:hover {
+    border: 5px solid #000000;
+    border-radius: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 裏側の表示 */
+.copy2 {
+    margin-left: 20px;
+    margin-top: 120px;
+}
+
+.about, .works, .contact, .other {
+    display: none;
+    font-family: keifont;
+    animation: downIn 1s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+}
+
+.copy2, .copy3 {
+    display: none;
+}
+
+#about:checked ~ .about {
+    display: block;
+}
+#about:checked ~ .copy2 {
+    display: block;
+}
+#works:checked ~ .works {
+    display: block;
+}
+#works:checked ~ #back {
+    display: none;
+}
+#contact:checked ~ .contact {
+    display: block;
+}
+#contact:checked ~ .copy2 {
+    display: block;
+    margin-top: 254px;
+}
+#other:checked ~ .other {
+    display: block;
+}
+#other:checked ~ .copy2 {
+    display: block;
+    margin-top: 142px;
+}
+
+.cmt {
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.foo3 {
+    margin-left: 120px;
+    margin-top: -205px;
+}
+
+.foo4 {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 35px
+}
+
+.foo5 {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.foo6 {
+    font-size: 30px;
+    margin-left: 100px;
+    margin-top: -30px;
+    display: inline-block;
+}
+.foo6:hover {
+    opacity: 0.7;
+}
+
+.maker {
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: -120px;
+}
+
+.desigen {
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: -40px;
+}
+
+.desigen_txt:hover {
+    opacity: 0.7;
+}
+
+.lib {
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: -40px
+}
+
+.mrg {
+    margin-left: 30px;
+}
+
+.right {
+    float: right;
+    margin-top: -150px;
+}
+
+.under {
+    margin-top: -30px;
+    border-bottom: 2px solid;
+    width: 1890px;
+}
+
+.work-txt {
+    font-size: 20px;
+    margin-left: 130px;
+}
+
+.card-body div {
+    margin-top: -70px;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.work-img {
+    width: 20vw;
+    border: 1px solid #000;
+    border-radius: 10px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.work-img:hover {
+    background-color: black;
+    opacity: 0.7;
+}
+
+.link-2 {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* その他 */
+.color {
+    color: #ff0000;
+}
+
+.ore {
+    color: #ffffff;
+    text-shadow: 2px 2px 1px rgb(238, 155, 1), -2px 2px 1px rgb(238, 155, 1), 2px -2px 1px rgb(238, 155, 1),
+    -2px -2px 1px rgb(238, 155, 1), 1px 0px 1px rgb(238, 155, 1), 0px 2px 1px rgb(238, 155, 1),
+    -2px 0px 1px rgb(238, 155, 1), 0px -2px 1px rgb(238, 155, 1);
+}
+
+.big {
+    font-size: 40px;
+}
+
+.big2 {
+    font-size: 60px;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+}
+@media screen and (max-width: 480px) {
+	.pc {
+        display: none;
+    }
+    .smart {
+        display: block;
+        animation: downIn 1s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+    }
+}
