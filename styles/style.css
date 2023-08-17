@@ -461,6 +461,23 @@ input {
         transform: scale(0.5, 0.5);
         margin-left: -150px;
     }
+    .work-img {
+        width: 50vw;
+        border: 1px solid #000;
+        border-radius: 10px;
+    
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+    .work-txt {
+        font-size: 20px;
+        margin-left: 60px;
+    }
+    .works {
+        margin-top: -400px;
+    }
     /* .smart {
         display: block;
         animation: downIn 1s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
