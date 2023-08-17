@@ -311,6 +311,9 @@ input {
 #works:checked ~ #back {
     display: none;
 }
+#works:checked ~ #copy2 {
+    display: block;
+}
 #contact:checked ~ .contact {
     display: block;
 }
@@ -454,10 +457,11 @@ input {
 }
 @media screen and (max-width: 480px) {
 	.pc {
-        display: none;
+        /* display: none; */
+        transform: scale(0.5, 0.5);
     }
-    .smart {
+    /* .smart {
         display: block;
         animation: downIn 1s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
-    }
+    } */
 }
