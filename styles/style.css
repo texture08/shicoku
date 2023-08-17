@@ -459,6 +459,7 @@ input {
 	.pc {
         /* display: none; */
         transform: scale(0.5, 0.5);
+        margin-left: -150px;
     }
     /* .smart {
         display: block;
