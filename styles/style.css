@@ -478,8 +478,4 @@ input {
     .works {
         margin-top: -350px;
     }
-    /* .smart {
-        display: block;
-        animation: downIn 1s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
-    } */
 }
