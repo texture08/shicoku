@@ -9,3 +9,12 @@ p a {
 p a:hover {
     opacity: 0.5;
 }
+
+@media screen and (max-width: 480px) {
+    p {
+        margin-left: 10px;
+    }
+	p a {
+        margin-right: 20px;
+    }
+}

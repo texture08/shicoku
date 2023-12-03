@@ -1,13 +1,5 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 480px) {
-	.pc {
-        /* display: none; */
-        transform: scale(0.5, 0.5);
-        margin-left: -150px;
-    }
-}
-
 @keyframes downIn {
     0% {
         transform: translateY(100px);
@@ -222,4 +214,12 @@ a {
 
 .red {
     color: red;
+}
+
+@media screen and (max-width: 480px) {
+	.pc {
+        /* display: none; */
+        transform: scale(0.45, 0.45);
+        margin-left: -150px;
+    }
 }
