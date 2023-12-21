@@ -265,11 +265,16 @@ p {
     color: #000000;
 }
 
+.foo p {
+    margin: 0.3em 0px;
+    margin-left: 70px;
+}
+
 .mrg {
-    margin-left: 100px;
+    margin-left: 60px;
 }
 .mrg2 {
-    margin-left: 240px;
+    margin-left: 197px;
 }
 
 .copy {
@@ -327,5 +332,16 @@ p {
         -moz-user-select: none;
         -webkit-user-select: none;
         -ms-user-select: none;
+    }
+
+    .foo p {
+        margin: 0.5em 0px;
+        margin-left: 70px;
+    }
+    .mrg {
+        margin-left: 10px;
+    }
+    .mrg2 {
+        margin-left: 0;
     }
 }
